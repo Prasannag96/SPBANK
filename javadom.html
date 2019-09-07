@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOM manipulation</title>
+</head>
+<body>
+        <script type="text/javascript">//getelementbyid
+            function getcube(){
+            var number=document.getElementById("number").value;
+            alert(number*number*number);
+        }
+        </script>
+        <form>
+            enter no:<input type="text" id="number" name="number"/><br>
+            <input type="button" value="cube" onclick="getcube()"/><br><br>
+        </form>
+  
+    <script type="text/javascript">
+    function fn1()
+    {
+        var rd1 = document.getElementById("rd1");
+        var rd2 = document.getElementById("rd2");
+
+        if(rd1.checked==true){
+            alert("The name is selected : "+rd1.value);
+        }
+        else if(rd2.checked==true){
+            alert("The name is selected : "+rd2.value);
+        }
+        else
+            alert("no name is selected");        
+    }
+    </script>
+    <input id="rd1" name="grp1" type="radio" value="Kumar">Kumar</input><br>
+    <input id="rd2" name="grp1" type="radio" value="Gentlemen">Gentlemen</input> <br>
+    <button onclick="fn1()" id="btnl">Select any one</button>
+    <br>
+    <br>
+    <br>
+    <select>
+        <option>Prasanna</option>
+        <option>Valmiki</option>
+        <option>Kumar</option>
+    </select>
+    <br>
+    <button>Select one</button>
+</body>
+</html>

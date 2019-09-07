@@ -1,0 +1,121 @@
+<html>
+    <head>
+        <title>javascript practice</title>
+        <style>
+        body{background-color:teal}
+        </style>
+    </head>
+    <body>
+        <script>
+         var a=1;
+         var b=2;
+         var c=3;
+         var d=a+b+c;//it add values of a b c variable//
+         document.writeln(d +"<br>");//print sum of 1&2&3// 
+         document.write("single line comment")
+         </script><br><br><br>
+         <script>
+         var data=255;//global variable
+         function a(){
+             document.writeln(data);
+         }
+          a();
+        </script><br><br>
+        <script>
+        var a=10;
+        if(a>5){
+            document.write("value of a is greater than 5")
+        }
+        </script><br><br>
+        <script>  
+            var a=50;  
+            if(a%5==0){  
+            document.write("a is even number");  
+            }  
+            else{  
+            document.write("a is odd number");  
+            }  
+        </script><br><br>
+        <script>
+            var a=0;  
+            if(a==10){  
+            document.write("a is equal to 10");  
+            }  
+            else if(a==15){  
+            document.write("a is equal to 15");  
+            }  
+            else if(a==20){  
+            document.write("a is equal to 20");  
+            }  
+            else if(a==0){
+            document.write("a is equal to 0");    
+            }
+            else{  
+            document.write("a is not equal to 10, 15 or 20");  
+            }  
+         </script><br><br>
+         <script>
+             var grade='b';
+             var result;
+             switch(grade){
+                 case 'a':
+             result='a grade';
+             break;
+                 case 'b':
+             result='b grade';
+             break;
+                 case 'c':
+             result='c grade';
+             break;
+             default:
+             result='no grade';       
+             }
+             document.write(result);
+         </script><br><br>
+         <script>
+             for(i=0;i<=10;i++)
+             {
+                 document.write(i+"<br>")
+             }
+        </script><br>
+        <script>
+             var i=11;  
+            while (i<=20)  
+            {  
+            document.write(i + "<br/>");  
+            i++;  
+            }  
+        </script><br><br>
+        <script>
+            var i=30
+            do{
+            document.write(i+"<br>");
+            i++;
+            }while(i<=40);
+        </script><br><br>
+        <script>
+        function msg(){
+        alert("Rowdy gentlemen is here ");    
+        }
+        </script>
+        <input type="button" onclick="msg()" value="call king">
+        <script>
+             function getcube(number){
+             alert(number*number*number);
+             }
+        </script>
+        <form>
+            <input type="button" value="click" onclick="getcube(5)">
+        </form>
+        <script>
+            function getinfo(){
+            return "hello rowdy!how u dng?";
+        }
+        </script>
+        <script>
+            document.writeln(getinfo());
+        </script>
+    </body>
+</html>
+
+
